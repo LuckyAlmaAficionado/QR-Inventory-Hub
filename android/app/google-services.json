@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "488001229244",
+    "firebase_url": "https://qrcode-bloc-c5344-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "qrcode-bloc-c5344",
+    "storage_bucket": "qrcode-bloc-c5344.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488001229244:android:f92cf722b9c396dfcc1bb9",
+        "android_client_info": {
+          "package_name": "com.example.qrcode"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo7slFqfk0M-H6qcLrR0Gb5KRk7G-smsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:488001229244:android:d1005bb5bd63ac1fcc1bb9",
+        "android_client_info": {
+          "package_name": "com.luckyalma.qr_code"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDo7slFqfk0M-H6qcLrR0Gb5KRk7G-smsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
