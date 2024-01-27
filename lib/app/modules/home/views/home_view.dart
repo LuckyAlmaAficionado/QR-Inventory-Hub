@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 import 'package:gap/gap.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:qr_code/app/controllers/auth_controller.dart';
 import 'package:qr_code/app/routes/app_pages.dart';
@@ -96,7 +97,10 @@ class HomeView extends GetView<HomeController> {
                     child: Icon(icon, size: 50),
                   ),
                   const Gap(10),
-                  Text(title)
+                  Text(
+                    title,
+                    style: GoogleFonts.outfit(),
+                  )
                 ],
               ),
             ),

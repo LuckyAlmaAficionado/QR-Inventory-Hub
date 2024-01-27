@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:qr_code/app/controllers/auth_controller.dart';
 import 'package:qr_code/app/routes/app_pages.dart';
 
@@ -27,11 +28,13 @@ class LoginView extends GetView<LoginController> {
           padding: const EdgeInsets.all(20),
           children: [
             TextField(
+              style: GoogleFonts.outfit(),
               autocorrect: false,
               controller: emailC,
               keyboardType: TextInputType.emailAddress,
               decoration: InputDecoration(
                 labelText: 'Email',
+                labelStyle: GoogleFonts.outfit(),
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(9),
                 ),
@@ -40,12 +43,14 @@ class LoginView extends GetView<LoginController> {
             const Gap(20),
             Obx(
               () => TextField(
+                style: GoogleFonts.outfit(),
                 autocorrect: false,
                 controller: passC,
                 keyboardType: TextInputType.text,
                 obscureText: controller.isHidden.value,
                 decoration: InputDecoration(
                   labelText: 'Password',
+                  labelStyle: GoogleFonts.outfit(),
                   suffixIcon: IconButton(
                     onPressed: () {
                       controller.isHidden.toggle();
@@ -84,9 +89,15 @@ class LoginView extends GetView<LoginController> {
                   }
                 }
               },
-              child: Obx(() => Text(
-                    controller.isLoading.isFalse ? 'LOGIN' : 'Loading...',
-                  )),
+              child: Obx(
+                () => Text(
+                  controller.isLoading.isFalse ? 'Sign In' : 'Loading...',
+                  style: GoogleFonts.outfit(
+                    fontWeight: FontWeight.w600,
+                    fontSize: 16,
+                  ),
+                ),
+              ),
               style: ElevatedButton.styleFrom(
                 padding: const EdgeInsets.symmetric(vertical: 20),
                 shape: RoundedRectangleBorder(
